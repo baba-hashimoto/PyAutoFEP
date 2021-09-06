@@ -1,0 +1,74 @@
+(PyAutoFEP) tbaba@YW113:/work113/tbaba/PyAutoFEP/docs/tutorial01_samaple1$ python ../../prepare_dual_topology.py --config_file=step2.ini --output_hidden_temp_dir=False
+=============== mdp and run steps=================
+         Complex                    Water
+        min01.mdp                 min01.mdp
+        min02.mdp                 min02.mdp
+        min03.mdp                  nve.mdp
+         nve.mdp                   nvt.mdp
+         nvt.mdp                   npt.mdp
+         npt.mdp                   md.mdp
+         md.mdp                       -
+==================================================
+================= Input ligands ==================
+   Name         Molecule            Topology
+  FXR_12   [H]c1c([H])c([H])c(S(=O)(=O)N2C([H])([H])C([H])([H])C3(C(=O)N(C([H])([H])c4c([H])c([H])c(C(=O)[O-])c([H])c4[H])c4c([H])c([H])c(Br)c([H])c43)C([H])([H])C2([H])[H])c(Cl)c1[H] lig_data/FXR_12.itp
+  FXR_74   [H]c1c([H])c([H])c(S(=O)(=O)N2C([H])([H])C([H])([H])C3(C(=O)N(C([H])([H])c4c([H])c([H])c(C(=O)[O-])c([H])c4[H])c4c([H])c([H])c(Br)c([H])c43)C([H])([H])C2([H])[H])c(Br)c1[H] lig_data/FXR_74.itp
+  FXR_76   [H]c1c([H])c([H])c(S(=O)(=O)N2C([H])([H])C([H])([H])C3(C(=O)N(C([H])([H])c4c([H])c([H])c(C(=O)[O-])c([H])c4[H])c4c([H])c([H])c(Br)c([H])c43)C([H])([H])C2([H])[H])c([H])c1[H] lig_data/FXR_76.itp
+  FXR_84   [H]c1c([H])c([H])c(S(=O)(=O)N2C([H])([H])C([H])([H])C3(C(=O)N(C([H])([H])c4c([H])c([H])c(C(=O)[O-])c([H])c4[H])c4c([H])c([H])c(Br)c([H])c43)C([H])([H])C2([H])[H])c(F)c1[H] lig_data/FXR_84.itp
+  FXR_85   [H]c1c([H])c([H])c(S(=O)(=O)N2C([H])([H])C([H])([H])C3(C(=O)N(C([H])([H])c4c([H])c([H])c(C(=O)[O-])c([H])c4[H])c4c([H])c([H])c(Br)c([H])c43)C([H])([H])C2([H])[H])c(C([H])([H])[H])c1[H] lig_data/FXR_85.itp
+  FXR_88   [H]c1c([H])c([H])c(S(=O)(=O)N2C([H])([H])C([H])([H])C3(C(=O)N(C([H])([H])c4c([H])c([H])c(C(=O)[O-])c([H])c4[H])c4c([H])c([H])c(Br)c([H])c43)C([H])([H])C2([H])[H])c(C(F)(F)F)c1[H] lig_data/FXR_88.itp
+==================================================
+=================== Poses read ===================
+Name            File
+reference       {'molecule': 'receptor_data/9mv.pdb', 'format': '.pdb'}
+=================== Poses read ===================
+Name            File
+FXR_12          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640ad0>, 'topology': ['lig_data/FXR_12.itp']}
+FXR_74          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640f30>, 'topology': ['lig_data/FXR_74.itp']}
+FXR_76          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640990>, 'topology': ['lig_data/FXR_76.itp']}
+FXR_84          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640a30>, 'topology': ['lig_data/FXR_84.itp']}
+FXR_85          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a655710>, 'topology': ['lig_data/FXR_85.itp']}
+FXR_88          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640a80>, 'topology': ['lig_data/FXR_88.itp']}
+=============== Superimposed poses ===============
+Name            File                      Note
+FXR_12          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640ad0>, 'topology': ['lig_data/FXR_12.itp']}
+FXR_74          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640f30>, 'topology': ['lig_data/FXR_74.itp']}
+FXR_76          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640990>, 'topology': ['lig_data/FXR_76.itp']}
+FXR_84          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640a30>, 'topology': ['lig_data/FXR_84.itp']}
+FXR_85          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a655710>, 'topology': ['lig_data/FXR_85.itp']}
+FXR_88          {'molecule': <rdkit.Chem.rdchem.Mol object at 0x14b16a640a80>, 'topology': ['lig_data/FXR_88.itp']}
+==================================================
+================== Align poses ===================
+Molecule FXR_12 aligned
+Molecule FXR_74 aligned
+Molecule FXR_76 aligned
+Molecule FXR_84 aligned
+Molecule FXR_85 aligned
+Molecule FXR_88 aligned
+================= Perturbations ==================
+         State A                  State B
+         FXR_12                   FXR_74
+         FXR_12                   FXR_76
+         FXR_12                   FXR_84
+         FXR_12                   FXR_85
+         FXR_12                   FXR_88
+==================================================
+================ Working on pairs ================
+Perturbation Pose Coordinates
+============ Working on FXR_12-FXR_74 ============
+FXR_12 -> FXR_74
+================ Building system =================
+============ Working on FXR_12-FXR_76 ============
+FXR_12 -> FXR_76
+================ Building system =================
+============ Working on FXR_12-FXR_84 ============
+FXR_12 -> FXR_84
+================ Building system =================
+============ Working on FXR_12-FXR_85 ============
+FXR_12 -> FXR_85
+================ Building system =================
+============ Working on FXR_12-FXR_88 ============
+FXR_12 -> FXR_88
+================ Building system =================
+Input data written to /work113/tbaba/PyAutoFEP/docs/tutorial01_samaple1/tutorial.bin
+

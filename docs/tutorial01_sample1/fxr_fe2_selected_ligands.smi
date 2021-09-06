@@ -1,0 +1,6 @@
+[O-]C(=O)c1ccc(CN2C(=O)C3(CCN(CC3)S(=O)(=O)c3ccccc3Cl)c3cc(Br)ccc23)cc1	FXR_12
+[O-]C(=O)c1ccc(CN2C(=O)C3(CCN(CC3)S(=O)(=O)c3ccccc3Br)c3cc(Br)ccc23)cc1	FXR_74
+[O-]C(=O)c1ccc(CN2C(=O)C3(CCN(CC3)S(=O)(=O)c3ccccc3)c3cc(Br)ccc23)cc1	FXR_76
+[O-]C(=O)c1ccc(CN2C(=O)C3(CCN(CC3)S(=O)(=O)c3ccccc3F)c3cc(Br)ccc23)cc1	FXR_84
+Cc1ccccc1S(=O)(=O)N1CCC2(CC1)C(=O)N(Cc1ccc(cc1)C(=O)[O-])c1ccc(Br)cc21	FXR_85
+[O-]C(=O)c1ccc(CN2C(=O)C3(CCN(CC3)S(=O)(=O)c3ccccc3C(F)(F)F)c3cc(Br)ccc23)cc1	FXR_88
